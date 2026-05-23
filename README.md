@@ -1,4 +1,4 @@
-# TFG - Analysis of xG and Goal Efficiency in European Football
+# TFG - Beyond the scoreline: Analysis of xG and Goal Efficiency in European Football
 
 This repository contains the code and resources used for my Final Degree Project, focused on the analysis of the relationship between expected goals (xG) and actual goals in European football leagues.
 
