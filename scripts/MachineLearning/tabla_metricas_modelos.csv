@@ -1,0 +1,4 @@
+﻿Modelo,MAE,RMSE,R2
+Árbol de Decisión,0.7248,0.9353,0.012
+Random Forest,0.7366,0.9543,-0.0285
+XGBoost,0.7222,0.9325,0.0179
