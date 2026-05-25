@@ -23,7 +23,7 @@ axs[1].set_ylabel("Intercepto")
 axs[2].bar(df["Liga"], df["R^2"], width=0.5)
 axs[2].set_ylabel("R^2")
 
-plt.xticks(rotation=15)   # <-- INCLINAR ETIQUETAS
+plt.xticks(rotation=15)   # INCLINAR ETIQUETAS
 plt.tight_layout()
-plt.subplots_adjust(hspace=0.4)   # <-- MÁS SEPARACIÓN ENTRE GRÁFICAS
+plt.subplots_adjust(hspace=0.4)   # MÁS SEPARACIÓN ENTRE GRÁFICAS
 plt.show()

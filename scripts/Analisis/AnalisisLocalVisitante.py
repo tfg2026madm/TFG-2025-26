@@ -10,7 +10,6 @@ plt.style.use('seaborn-v0_8-whitegrid')
 file_path = r"C:\Users\pablo\OneDrive - Universidad Complutense de Madrid (UCM)\5º (1º CUATRI)\TFG\AnálisisPythonTFG\understat_per_game.csv"
 df = pd.read_csv(file_path)
 
-# --- PASO 1: Separar Datos Local (h) y Visitante (a) ---
 df_home = df[df['h_a'] == 'h']
 df_away = df[df['h_a'] == 'a']
 
@@ -40,21 +39,20 @@ def analizar_regresion(data, label, color, ax):
     
     return m, r2
 
-# --- PASO 2: Ejecutar Análisis ---
 fig, ax = plt.subplots(figsize=(10, 8))
 
 print("RESULTADOS COMPARATIVOS:")
 m_home, r2_home = analizar_regresion(df_home, "Local", "blue", ax)
 m_away, r2_away = analizar_regresion(df_away, "Visitante", "red", ax)
 
-# --- PASO 3: Configuración del Gráfico ---
-ax.set_title("Comparativa de Eficiencia: Local vs Visitante", fontsize=16)
+# Configuración del Gráfico 
+#ax.set_title("Comparativa de Eficiencia: Local vs Visitante", fontsize=16)
 ax.set_xlabel("xG (Goles Esperados)")
 ax.set_ylabel("Goles Reales")
 ax.legend()
 ax.grid(True, linestyle='--', alpha=0.5)
 
-# Añadir texto explicativo en el gráfico
+# texto 
 plt.text(0.05, 0.95, f"Local: m={m_home:.3f}, R2={r2_home:.3f}", transform=ax.transAxes, color='blue', fontweight='bold')
 plt.text(0.05, 0.90, f"Visitante: m={m_away:.3f}, R2={r2_away:.3f}", transform=ax.transAxes, color='red', fontweight='bold')
 

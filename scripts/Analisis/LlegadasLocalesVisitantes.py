@@ -29,8 +29,9 @@ valores = [promedio_deep_home, promedio_deep_away]
 
 # Creamos la gráfica
 plt.bar(categorias, valores, color=['blue', 'red'], alpha=0.7, width=0.5)
-# 3. Añadir títulos y etiquetas
-plt.title('Volumen de Juego: Llegadas a Zona de Peligro (Deep)', fontsize=14, fontweight='bold')
+
+# Añadir títulos y etiquetas
+#plt.title('Volumen de Juego: Llegadas a Zona de Peligro (Deep)', fontsize=14, fontweight='bold')
 plt.ylabel('Promedio de Pases Profundos por Partido', fontsize=12)
 plt.grid(axis='y', linestyle='--', alpha=0.7) # Rejilla solo horizontal
 plt.show()

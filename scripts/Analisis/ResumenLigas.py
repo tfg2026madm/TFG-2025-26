@@ -19,7 +19,7 @@ tabla = dfUstat.groupby("year").agg(
 
 print(tabla)
 
-tabla.to_csv("Resumen.csv", index=False)
+#tabla.to_csv("Resumen.csv", index=False)
 
 
 
